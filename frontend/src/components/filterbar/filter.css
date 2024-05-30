@@ -1,0 +1,69 @@
+.filter {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+      
+    margin-left: 30px;
+    margin-top: 110px;
+     z-index: 1;
+    width: 150px;
+    height: 120vh;
+    position: absolute;
+    left: 25px;
+  
+  
+  
+   
+
+ 
+  
+    
+  }
+  
+  .filter h1 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .filter .form-check {
+    margin-bottom: 10px;
+  }
+  
+  .filter .form-check-input {
+    margin-right: 10px;
+
+    border:1px solid tomato;
+  }
+  
+  .filter .form-check-label {
+    font-size: 1rem;
+  }
+  
+  .filter .form-group {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width:800px) {
+    .filter{
+        width: 200px;
+        margin-left: 0px;
+        height: auto;
+    }
+    
+  }
+
+  @media (max-width:480px) {
+    .filter{
+        width: 100px;
+        margin: 0px;
+        height: auto;
+        margin-top: 95px;
+        margin-left: 0px;
+    }
+     
+    
+  }
+  
+ 

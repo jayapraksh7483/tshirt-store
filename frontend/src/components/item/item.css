@@ -1,0 +1,84 @@
+ 
+  
+  .item {
+   
+    padding: 10px;
+    border: 2px solid #f01010;
+    border-radius: 5px;
+    background-color: aliceblue;
+     
+  }
+
+  .item:hover {
+    box-shadow: 0 8px 16px white;  
+  }
+  
+  .item img {
+    max-width: 300px;
+    height: 220px;
+    
+    
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+  }
+  
+  .item p {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .item-pa
+  {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .item-pa p
+  { 
+    color: tomato;
+    font-size: 20px;
+  }
+
+  .item-pa button
+  {
+    border-radius: 2px;
+    margin-right: 30px;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    
+  }
+  .qua
+  {
+    display:flex;
+ 
+    align-items: center;
+ 
+
+  }
+   .qua .btn
+  {
+    width:30px ;
+    padding: 0;
+  }
+  .qua{
+    font-size: 20px;
+  
+   
+  }
+  .qua span{
+    padding-right: 27px;
+  }
+
+  
+  
+   
+  
+ 
+  
