@@ -1,66 +1,79 @@
-.search-box {
-    position:absolute;
+ .search-box {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
-   
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     top: 100px;
-    right:250px;
-    position: fixed;
-    
-  }
-  
-  .search-box input[type="text"] {
+    right: 250px;
+    z-index: 998;
+}
+
+.search-box input[type="text"] {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px 0 0 8px;
     outline: none;
-    width: 500px; /* Adjust the width as needed */
-  }
-  
-  .search-box button {
+    width: 400px;
+    font-size: 1rem;
+}
+
+.search-box button {
     padding: 10px 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #dee2e6;
     border-left: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #007bff; /* Bootstrap primary color */
+    border-radius: 0 8px 8px 0;
+    background-color: #3498db; /* Blue accent */
     color: white;
     cursor: pointer;
-  }
-  
-  .search-box button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
+    transition: background-color 0.3s ease;
+}
 
-  @media (max-width:480px) {
+.search-box button:hover {
+    background-color: #2980b9; /* Darker blue */
+}
 
-    .search-box{
-      margin-right:-200px;
-      margin-top: -6px;
-      width: 280px;
+@media (max-width: 1200px) {
+    .search-box {
+        right: 150px;
+        width: 350px;
     }
-    
+
     .search-box input[type="text"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px 0 0 5px;
-      outline: none;
-      width: 130px; /* Adjust the width as needed */
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .search-box {
+        right: 20px;
+        width: 300px;
+        top: 80px;
+    }
+
+    .search-box input[type="text"] {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-box {
+        width: 100%;
+        max-width: 280px;
+        right: 10px;
+        top: 90px;
+        padding: 8px;
+    }
+
+    .search-box input[type="text"] {
+        width: 180px;
+        font-size: 0.9rem;
     }
 
     .search-box button {
-      padding: 10px 20px;
-      border: 1px solid #ccc;
-      border-left: none;
-      border-radius: 0 5px 5px 0;
-      background-color: #007bff; /* Bootstrap primary color */
-      color: white;
-      cursor: pointer;
+        padding: 8px 15px;
     }
-    
-  }
- 
+}

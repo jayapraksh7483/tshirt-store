@@ -1,69 +1,67 @@
 .filter {
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-      
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     margin-left: 30px;
-    margin-top: 110px;
-     z-index: 1;
-    width: 150px;
-    height: 120vh;
-    position: absolute;
+    margin-top: 120px;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    position: fixed;
     left: 25px;
-  
-  
-  
-   
+}
 
- 
-  
-    
-  }
-  
-  .filter h1 {
+.filter h1 {
     font-size: 1.5rem;
-    color: #333333;
+    color: #2c3e50; /* Dark teal for headings */
     margin-bottom: 15px;
-  }
-  
-  .filter .form-check {
-    margin-bottom: 10px;
-  }
-  
-  .filter .form-check-input {
+}
+
+.filter .form-check {
+    margin-bottom: 12px;
+}
+
+.filter .form-check-input {
     margin-right: 10px;
+    border: 2px solid #ff6f61; /* Coral accent */
+}
 
-    border:1px solid tomato;
-  }
-  
-  .filter .form-check-label {
+.filter .form-check-label {
     font-size: 1rem;
-  }
-  
-  .filter .form-group {
+    color: #34495e; /* Darker neutral text */
+}
+
+.filter .form-group {
     margin-bottom: 20px;
-  }
+}
 
-  @media (max-width:800px) {
-    .filter{
-        width: 200px;
-        margin-left: 0px;
-        height: auto;
+@media (max-width: 1200px) {
+    .filter {
+        width: 180px;
+        margin-left: 20px;
     }
-    
-  }
+}
 
-  @media (max-width:480px) {
-    .filter{
-        width: 100px;
-        margin: 0px;
-        height: auto;
-        margin-top: 95px;
-        margin-left: 0px;
+@media (max-width: 800px) {
+    .filter {
+        width: 100%;
+        max-width: 300px;
+        margin-left: 10px;
+        position: static;
+        margin-top: 20px;
     }
-     
-    
-  }
-  
- 
+}
+
+@media (max-width: 480px) {
+    .filter {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .filter h1 {
+        font-size: 1.25rem;
+    }
+}

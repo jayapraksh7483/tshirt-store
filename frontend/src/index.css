@@ -1,41 +1,54 @@
- @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
- 
- 
- 
-  
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 
-
- * { 
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
- 
-
 }
-body {
 
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Light grey background */
+    font-family: 'Arial', sans-serif;
 }
 
 a {
-   text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: #34495e; /* Neutral text */
 }
 
-
-.app
-{
-  width:80%; 
-  margin:auto;
+.app {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
 }
+
 @keyframes fadeIn {
-  0%{
-     opacity: 0;
-  }
-  100%{
-     opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .app {
+        width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    .app {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        padding: 0 10px;
+    }
 }
